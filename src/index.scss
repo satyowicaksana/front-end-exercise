@@ -1,0 +1,26 @@
+@import './variables';
+
+body {
+  margin: 0;
+  font-family: $roboto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  color: white;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  font-family: $roboto;
+  padding: 10px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
