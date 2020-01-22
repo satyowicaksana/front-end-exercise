@@ -1,0 +1,18 @@
+@import '../variables';
+
+.services {
+  background: $smoke-grey;
+  text-align: center;
+  color: #342F36;
+  h1 {
+    font-weight: normal;
+  }
+  h3 {
+    font-weight: normal;
+    max-width: 650px;
+    margin: auto;
+  }
+  .container {
+    padding: 30px;
+  }
+}
