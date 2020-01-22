@@ -7,10 +7,8 @@ $orange: #ff8000;
 $dark-orange: #cc6600;
 $smoke-grey: #e5e5e5;
 $roboto: 'Roboto', sans-serif;
-$screen-xs-min: 425px;
-$screen-sm-min: 768px;
-$screen-md-min: 992px;
-$screen-lg-min: 1200px;
+$screen-xs-min: 480px;
+$screen-sm-min: 960px;
 
 @mixin absolute($top, $left) {
   margin: 0;

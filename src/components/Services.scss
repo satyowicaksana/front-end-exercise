@@ -4,7 +4,11 @@
   background: $smoke-grey;
   text-align: center;
   color: #342F36;
+  padding: 40px 0;
   h1 {
+    font-weight: normal;
+  }
+  h2 {
     font-weight: normal;
   }
   h3 {
@@ -14,5 +18,27 @@
   }
   .container {
     padding: 30px;
+  }
+  .tiles {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    .tile-container {
+      width: 33%;
+      @media (max-width: $screen-sm-min) {
+        width: 50%;
+      }
+      @media (max-width: $screen-xs-min) {
+        width: 100%;
+      }
+      .tile {
+        border: 1px solid #B5B5B5;
+        margin: 15px;
+        box-shadow: inset 2px 2px 1px 0px rgba(245,245,245,1), 2px 2px 1px 0px rgba(245,245,245,1);
+        text-align: left;
+        padding: 5px 20px 0 20px;
+        height: calc(100% - 30px);
+      }
+    }
   }
 }
