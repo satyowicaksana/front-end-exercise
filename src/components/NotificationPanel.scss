@@ -2,7 +2,48 @@
 
 #notification-panel { 
   background-color: $smoke-grey;
+  top: 0;
+  width: 100vw;
   position: fixed;
+  .content {
+    max-width: 720px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+    padding: 0 5vw 10px 5vw;
+    @media (max-width: $screen-xs-min) {
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: baseline;
+      font-size: 11px;
+      max-width: 100%;
+      word-wrap: break-word;
+    }
+    .button {
+      width: 140px;
+      background-color: $blue;
+      font-size: 16px;
+      margin-left: 20px;
+      padding: 10px 0;
+      @media (max-width: $screen-xs-min) {
+        margin-left: 0;
+        font-size: 14px;
+        width: 55px;
+        padding: 8px 0;
+      }
+    }
+    .info {
+      @media (max-width: $screen-xs-min) {
+        width: 90vw;
+      }
+    }
+  }
+}
+
+#notification-panel-not-fixed { 
+  background-color: $smoke-grey;
   top: 0;
   width: 100vw;
   .content {
