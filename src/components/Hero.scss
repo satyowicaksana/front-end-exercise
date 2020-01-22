@@ -1,10 +1,43 @@
 @import '../variables';
 
 .hero {
-  height: 100vh;
+  height: 600px;
   background: $blue;
   background-image: url('../assets/hero-background-image.jpg');
   background-size: cover;
   box-shadow: inset 100vw 0 0 0 $dark-blue-transparent;
   display: block;
+  color: white;
+  .logo {
+    width: 55px;
+    @include absolute(8%, 5%);
+  }
+  .content {
+    @include absolute(50%, 50%);
+    text-align: center;
+    h1 {
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 30px;
+      margin: 0;
+    }
+    h3 {
+      font-weight: normal;
+    }
+  }
+  button {
+    @include absolute(73%, 50%);
+    background: none;
+    border: 1.5px solid white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 17px 25px;
+    transition: 0.3s;
+    &:hover {
+      color: $blue;
+      background: white;
+    }
+  }
 }
