@@ -14,10 +14,10 @@ export default () => {
               Have something great in mind? Feel free to contact me.<br />
               I'll help you to make it happen.
             </h3>
+            <button>
+              LET'S MAKE CONTACT
+            </button>
           </div>
-          <button>
-            LET'S MAKE CONTACT
-          </button>
         </div>
       </div>
     </>
