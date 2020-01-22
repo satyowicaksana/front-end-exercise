@@ -1,0 +1,9 @@
+@import '../variables';
+
+.hero {
+  height: 100vh;
+  background: $blue;
+  background-image: url('../assets/hero-background-image.jpg');
+  background-size: cover;
+  box-shadow: inset 2000px 0 0 0 $dark-blue-transparent;
+}

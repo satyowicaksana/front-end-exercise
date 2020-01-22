@@ -1,7 +1,13 @@
 @import '../variables';
 
-.notification-panel { 
+#notification-panel { 
   background-color: $smoke-grey;
+  position: fixed;
+  top: 0;
+  width: 1366px;
+  @media (max-width: 1366px) {
+    width: 100vw;
+  }
   .content {
     max-width: 720px;
     margin: auto;
@@ -9,11 +15,38 @@
     justify-content: center;
     align-items: center;
     line-height: 1.4;
+    padding: 0 5vw 10px 5vw;
+    @media (max-width: $screen-xs-min) {
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: baseline;
+      font-size: 11px;
+      max-width: 100%;
+      word-wrap: break-word;
+    }
     .button {
       width: 140px;
       background-color: $blue;
       font-size: 16px;
       margin-left: 20px;
+      padding: 10px 0;
+      @media (max-width: $screen-xs-min) {
+        margin-left: 0;
+        font-size: 14px;
+        width: 55px;
+        padding: 8px 0;
+      }
+    }
+    .info {
+      @media (max-width: $screen-xs-min) {
+        width: 90vw;
+      }
     }
   }
 }
+
+#notification-panel.hide {
+  height: 0px;
+  transition: 0.5s;
+  overflow: hidden;
+ }

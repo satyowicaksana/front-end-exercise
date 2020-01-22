@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './NotificationPanel.scss'
 
 export default () => {
+  const [hide, setHide] = useState(false)
+
   return (
     <>
-      <div className="notification-panel">
+      <div id="notification-panel" className={hide ? 'hide' : ''}>
         <div className="content">
           <p className="info">
             By accessing and using this website, you acknowledge that you have read and understand our 
@@ -12,7 +14,7 @@ export default () => {
             <a href="privacy-policy">&nbsp;Privacy Policy</a>, and our
             <a href="tos">&nbsp;Terms of Service</a>.
           </p>
-          <button className="button">
+          <button onClick={() => setHide(true)} className="button">
             Got it
           </button>
         </div>
