@@ -4,10 +4,7 @@
   background-color: $smoke-grey;
   position: fixed;
   top: 0;
-  width: 1366px;
-  @media (max-width: 1366px) {
-    width: 100vw;
-  }
+  width: 100vw;
   .content {
     max-width: 720px;
     margin: auto;
@@ -44,9 +41,3 @@
     }
   }
 }
-
-#notification-panel.hide {
-  height: 0px;
-  transition: 0.5s;
-  overflow: hidden;
- }
