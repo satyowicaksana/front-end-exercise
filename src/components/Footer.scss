@@ -1,0 +1,11 @@
+@import '../variables';
+
+footer {
+  background: #030324;
+  color: rgb(121, 131, 173);
+  height: 100px;
+  position: relative;
+  small {
+    @include absolute(50%, 50%);
+  }
+}
