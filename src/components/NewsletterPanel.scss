@@ -2,12 +2,62 @@
 
 .newsletter {
   background: $blue-transparent;
-  width: 600px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 640px;
   position: fixed; 
   left: 0;
   bottom: 0; 
   z-index: 1;
   color: white;
+  @media (max-width: $screen-xs-min) {
+    flex-direction: column;
+  }
+  .container {
+    margin: 30px;
+    position: relative;
+    @media (max-width: $screen-xs-min) {
+      margin: 20px;
+    }
+    h2 {
+      margin: 0;
+    }
+    .close-icon {
+      cursor: pointer;
+      font-size: 12px;
+      @include absolute(calc(0% - 15px), calc(100% + 15px));
+      @media (max-width: $screen-xs-min) {
+        @include absolute(0%, 100%);
+      }
+    }
+    .sign-up-form {
+      display: flex;
+      @media (max-width: $screen-xs-min) {
+        flex-direction: column;
+      }
+      .input-email {
+        padding: 3px 0 3px 6px; 
+        flex: 1;
+        font-size: 16px;
+        border: none;
+        padding: 5px 12px;
+      }
+      button {
+        font-family: $ubuntu;
+        background: $orange;
+        font-weight: bold;
+        letter-spacing: 0.8px;
+        margin-left: 10px;
+        font-size: 16px;
+        padding: 0 15px;
+        @media (max-width: $screen-xs-min) {
+          margin-left: 0;
+          margin-top: 15px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+::placeholder {
+  color: #BDBDBD;
 }
