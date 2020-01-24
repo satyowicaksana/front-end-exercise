@@ -58,7 +58,6 @@ export default () => {
               <input className="input-email" type="text" placeholder="Email address"></input>
               <button>Count me in!</button>
             </div>
-
             </div>
           </div>
           </>

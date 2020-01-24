@@ -5,7 +5,7 @@
   background: $blue;
   background-image: url('../assets/hero-background-image.jpg');
   background-blend-mode: multiply;
-  background-position: 0 -100px;
+  background-position: 0 -80px;
   background-attachment: fixed;
   background-size: cover;
   display: block;
@@ -17,7 +17,7 @@
   .logo {
     width: 55px;
     z-index: 1;
-    @include absolute(8%, 10%);
+    @include absolute(8%, 3%);
     @media (max-width: $screen-xs-min) {
       @include absolute(8%, 12%);
     }
@@ -40,10 +40,6 @@
     }
   }
   button {
-    // @include absolute(73%, 50%);
-    // @media (max-width: $screen-xs-min) {
-    //   @include absolute(80%, 50%);
-    // }
     margin-top: 15px;
     z-index: 1;
     background: none;

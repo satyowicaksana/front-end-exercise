@@ -6,6 +6,7 @@ footer {
   height: 100px;
   position: relative;
   small {
+    text-align: center;
     @include absolute(50%, 50%);
   }
 }
