@@ -5,7 +5,9 @@
   background: $blue;
   background-image: url('../assets/hero-background-image.jpg');
   background-blend-mode: multiply;
-  background-position: 0 -80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
   background-size: cover;
   display: block;
@@ -17,7 +19,7 @@
   .logo {
     width: 55px;
     z-index: 1;
-    @include absolute(8%, 3%);
+    @include absolute(8%, 5%);
     @media (max-width: $screen-xs-min) {
       @include absolute(8%, 12%);
     }
