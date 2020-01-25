@@ -28,6 +28,7 @@ export default () => {
     let diffMins = Math.abs(Math.round(((diffMs % 86400000) % 3600000) / 60000))
     return diffMins < 10
   }
+
   useEffect(() => {
     let body = document.body,
     html = document.documentElement
@@ -44,6 +45,7 @@ export default () => {
         setShowed(true)
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [scrollPosition, pageHeight])
 
   return (
