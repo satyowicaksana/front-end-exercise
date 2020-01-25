@@ -5,7 +5,7 @@ import { MdClose } from 'react-icons/md'
 
 export default () => {
   const [toggleEvent, setToggleEvent] = useState(0)
-  const [show, setShow] = useState(false)
+  const [showed, setShowed] = useState(false)
   const [pageHeight, setPageHeight] = useState(0)
   const [scrollPosition, setScrollPosition] = useState(window.pageYOffset)
 
@@ -14,12 +14,20 @@ export default () => {
   }
 
   const handleClose = () => {
+    setShowed(false)
     setToggleEvent(Date.now())
-    setTimeout(() => {
-      setShow(false)
-    }, (1000 * 60 * 10))
+    localStorage.setItem('newsPannelClosed', new Date())
   }
 
+  const hidden = () => {
+    if(!localStorage.getItem('newsPannelClosed')) {
+      return false
+    }
+    let closedTime = localStorage.getItem('newsPannelClosed')
+    let diffMs = new Date(closedTime) - new Date()
+    let diffMins = Math.abs(Math.round(((diffMs % 86400000) % 3600000) / 60000))
+    return diffMins < 10
+  }
   useEffect(() => {
     let body = document.body,
     html = document.documentElement
@@ -30,12 +38,13 @@ export default () => {
 
   useEffect(() => {
     let lastOneThird = Math.floor(pageHeight / 3)
-    if(window.pageYOffset > lastOneThird && !show) {
-      setToggleEvent(Date.now())
-      setShow(true)
+    if(window.pageYOffset > lastOneThird && !showed) {
+      if(!hidden()) {
+        setToggleEvent(Date.now())
+        setShowed(true)
+      }
     }
-  }, [scrollPosition, show, pageHeight])
-
+  }, [scrollPosition, pageHeight])
 
   return (
     <>
