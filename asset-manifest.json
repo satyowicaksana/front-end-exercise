@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/front-end-exercise/static/css/main.a914a4b6.chunk.css",
+    "main.css": "/front-end-exercise/static/css/main.3ac1e4e0.chunk.css",
     "main.js": "/front-end-exercise/static/js/main.6b830575.chunk.js",
     "main.js.map": "/front-end-exercise/static/js/main.6b830575.chunk.js.map",
     "runtime-main.js": "/front-end-exercise/static/js/runtime-main.41b0238b.js",
@@ -8,16 +8,16 @@
     "static/js/2.ba09da8a.chunk.js": "/front-end-exercise/static/js/2.ba09da8a.chunk.js",
     "static/js/2.ba09da8a.chunk.js.map": "/front-end-exercise/static/js/2.ba09da8a.chunk.js.map",
     "index.html": "/front-end-exercise/index.html",
-    "precache-manifest.ded95df90f68ca7534ff0698bc359df1.js": "/front-end-exercise/precache-manifest.ded95df90f68ca7534ff0698bc359df1.js",
+    "precache-manifest.8da55f5b0a8c8cd3618a5b2ba498087a.js": "/front-end-exercise/precache-manifest.8da55f5b0a8c8cd3618a5b2ba498087a.js",
     "service-worker.js": "/front-end-exercise/service-worker.js",
-    "static/css/main.a914a4b6.chunk.css.map": "/front-end-exercise/static/css/main.a914a4b6.chunk.css.map",
+    "static/css/main.3ac1e4e0.chunk.css.map": "/front-end-exercise/static/css/main.3ac1e4e0.chunk.css.map",
     "static/js/2.ba09da8a.chunk.js.LICENSE": "/front-end-exercise/static/js/2.ba09da8a.chunk.js.LICENSE",
     "static/media/Hero.scss": "/front-end-exercise/static/media/hero-background-image.a5a74b4f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.41b0238b.js",
     "static/js/2.ba09da8a.chunk.js",
-    "static/css/main.a914a4b6.chunk.css",
+    "static/css/main.3ac1e4e0.chunk.css",
     "static/js/main.6b830575.chunk.js"
   ]
 }
