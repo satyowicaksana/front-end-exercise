@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/front-end-exercise/static/css/main.17722eec.chunk.css",
+    "main.js": "/front-end-exercise/static/js/main.6b830575.chunk.js",
+    "main.js.map": "/front-end-exercise/static/js/main.6b830575.chunk.js.map",
+    "runtime-main.js": "/front-end-exercise/static/js/runtime-main.41b0238b.js",
+    "runtime-main.js.map": "/front-end-exercise/static/js/runtime-main.41b0238b.js.map",
+    "static/js/2.ba09da8a.chunk.js": "/front-end-exercise/static/js/2.ba09da8a.chunk.js",
+    "static/js/2.ba09da8a.chunk.js.map": "/front-end-exercise/static/js/2.ba09da8a.chunk.js.map",
+    "index.html": "/front-end-exercise/index.html",
+    "precache-manifest.9b08a6a083d3d9af499f7a01e0153e4b.js": "/front-end-exercise/precache-manifest.9b08a6a083d3d9af499f7a01e0153e4b.js",
+    "service-worker.js": "/front-end-exercise/service-worker.js",
+    "static/css/main.17722eec.chunk.css.map": "/front-end-exercise/static/css/main.17722eec.chunk.css.map",
+    "static/js/2.ba09da8a.chunk.js.LICENSE": "/front-end-exercise/static/js/2.ba09da8a.chunk.js.LICENSE",
+    "static/media/Hero.scss": "/front-end-exercise/static/media/hero-background-image.a5a74b4f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.41b0238b.js",
+    "static/js/2.ba09da8a.chunk.js",
+    "static/css/main.17722eec.chunk.css",
+    "static/js/main.6b830575.chunk.js"
+  ]
+}
